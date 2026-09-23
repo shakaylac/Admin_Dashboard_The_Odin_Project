@@ -5,7 +5,19 @@
     --font-color:#222;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--nuetral-color);
 }
 
+aside {
+    background-color: var(--main-color);
+}
+
+.header {
+    background-color: #fff;
+}
