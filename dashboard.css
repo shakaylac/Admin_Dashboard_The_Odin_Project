@@ -2,7 +2,7 @@
     --main-color:rgb(0, 174, 255);
     --nuetral-color: #d8e6f3;
     --accent-color:#ffd000;
-    --font-color:#222;
+    --font-color:#3a3a3a;
 }
 
 * {
@@ -10,12 +10,19 @@
     padding: 0;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color);//
+}
+
 body {
     background-color: var(--nuetral-color);
+    display: grid;//
+    grid-template: repeat (3, 1fr);//
 }
 
 aside {
     background-color: var(--main-color);
+    grid-area: 1/ 2/ auto / span 1;
 }
 
 .header {
