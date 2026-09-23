@@ -4,3 +4,7 @@
     --accent-color:#ffd000;
     --font-color:#222;
 }
+
+body {
+    background-color: var(--nuetral-color);
+}
