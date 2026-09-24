@@ -19,7 +19,7 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
     background-color: var(--nuetral-color);
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: 20vh 80vh; /* Gotta be a simplier cleaner way to do this */
 }
 
@@ -32,7 +32,7 @@ aside {
 
 .title {
     display: flex;
-    padding: 20px 0px;
+    padding: 0px 20px 30px 0px;
     align-items: center;
 }
 
@@ -42,21 +42,22 @@ aside {
 }
 
 .logo {
-    padding: 20px;
-    border: 1px solid #fff;
+    padding: 15px;
+    background-color: #fff;
     margin-right: 15px;
 }
 
 .nav-icons {
-    padding: 15px;
+    padding: 10px;
     margin-right: 25px;
-    border: 1px solid #fff;
+    background-color: #fff;
 }
 
 .nav-option {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    padding: 10px 0px;
 }
 
 .nav-option > p {
@@ -69,12 +70,109 @@ aside {
     margin-top: 30px;
 }
 
+
+
 /* Top Nav */
 .header {
     background-color: #fff;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px 30px 0px 30px;
 }
+
+.upper-nav,
+.lower-nav {
+    display: flex;
+    align-items: center;
+}
+
+.upper-nav {
+    display: grid;
+    grid-template-columns: 60vw 5vw 5vw 10vw;
+}
+
+.search {
+    display: flex;
+    height: 25px;
+}
+
+.maginying-glass {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #000;
+    margin-right: 10px;
+}
+
+.search-feild {
+    width: 80%;
+    border-radius: 15px;
+    background-color: var(--nuetral-color);
+    border: none;
+}
+
+.profile-img-small {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.notification {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border: none;
+}
+
+.profile-img-small,
+.notification {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.lower-nav {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+.profile-img {
+    background-color: var(--accent-color);
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.greeting {
+    display: flex;
+    gap: 10px;
+}
+
+.greeting > .text {
+    text-align: start;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-buttons > button {
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
 
 /* Main Content */
 .main-content {
@@ -105,6 +203,8 @@ aside {
 
 .card {
     background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
 }
 
 .announcement-card {
