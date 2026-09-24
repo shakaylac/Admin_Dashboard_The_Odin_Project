@@ -11,22 +11,54 @@
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: var(--font-color);//
+    color: var(--font-color);
 }
 
 body {
     background-color: var(--nuetral-color);
-    display: grid;//
-    grid-template: repeat (3, 1fr);//
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 20vh 80vh; /* Gotta be a simplier cleaner way to do this */
 }
 
+/* Sidebar */
 aside {
     background-color: var(--main-color);
-    grid-area: 1/ 2/ auto / span 1;
+    grid-area: 1 / auto / 3/ auto;
 }
 
+/* Top Nav */
 .header {
     background-color: #fff;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.projects h3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
 }
 
 .card {
@@ -35,6 +67,12 @@ aside {
 
 .announcement-card {
     background-color: #fff;
+}
+
+.trending {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
 }
 
 .trending-card {
